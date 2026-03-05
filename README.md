@@ -94,7 +94,7 @@ Recovery attempts and recovery time are recorded to evaluate system resilience.
 
 ---
 
-## Technologies
+Technologies
 
 The system is implemented using the following tools:
 
@@ -106,11 +106,11 @@ The system is implemented using the following tools:
 
 ---
 
-## Data Outputs
+Outputs
 
 The monitoring system produces several output datasets.
 
-### Worker Metrics
+Worker Metrics
 
 Collected system metrics from distributed workers.
 
@@ -148,7 +148,7 @@ metrics/alerts.csv
 
 ---
 
-## Repository Str
+Repository Str
 
 ```
 self-healing-ai-infra
@@ -169,7 +169,7 @@ README.md
 
 ---
 
-## Applications
+Applications
 
 This system models infrastructure patterns used in:
 
