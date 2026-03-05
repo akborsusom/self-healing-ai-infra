@@ -25,7 +25,7 @@ Workers execute distributed workloads while system metrics are collected and ana
 
 When failures occur, retry mechanisms simulate self-healing behavior typical of resilient distributed systems.
 
----
+
 
 ## System Architecture
 
@@ -45,7 +45,7 @@ Key stages:
 4. Threshold-based anomaly detection identifies abnormal resource utilization.
 5. Self-healing logic retries failed jobs and measures recovery time.
 
----
+
 
 ## Core Components
 
@@ -54,7 +54,7 @@ Key stages:
 Ray is used to simulate distributed workers executing compute tasks.
 Each worker runs independently and produces runtime metrics that represent node-level resource utilization.
 
----
+
 
 ### Monitoring Pipeline
 
@@ -69,7 +69,7 @@ The monitoring pipeline records:
 
 These metrics represent the type of telemetry collected in real training infrastructure.
 
----
+
 
 ### Anomaly Detection
 
@@ -82,7 +82,7 @@ RAM usage > 80% → memory pressure event
 
 Detected anomalies are logged for analysis and potential recovery actions.
 
----
+
 
 ### Self-Healing Mechanism
 
@@ -92,7 +92,7 @@ When a task fails, the system attempts to restart the job automatically.
 
 Recovery attempts and recovery time are recorded to evaluate system resilience.
 
----
+
 
 Technologies
 
@@ -104,7 +104,7 @@ The system is implemented using the following tools:
 * psutil (system telemetry)
 * Google Colab runtime environment
 
----
+
 
 Outputs
 
@@ -114,9 +114,8 @@ Worker Metrics
 
 Collected system metrics from distributed workers.
 
-```
 metrics/worker_metrics.csv
-```
+
 
 Example fields:
 
@@ -126,31 +125,25 @@ Example fields:
 * ram_usage
 * timestamp
 
----
+
 
 ### Failure Recovery Results
 
 Records retry attempts and recovery time for simulated task failures.
 
-```
-metrics/self_healing_results.csv
-```
 
----
+metrics/self_healing_results.csv
+
 
 ### Detected Alerts
 
 Detected anomaly events based on system monitoring thresholds.
 
-```
 metrics/alerts.csv
-```
 
----
 
 Repository Str
 
-```
 self-healing-ai-infra
 
 notebooks/
@@ -165,9 +158,7 @@ docs/
 config.yaml
 report.md
 README.md
-```
 
----
 
 Applications
 
@@ -180,7 +171,6 @@ This system models infrastructure patterns used in:
 
 Monitoring, anomaly detection, and automated recovery are critical components in maintaining reliability for large distributed workloads.
 
----
 
 ## Coming
 
